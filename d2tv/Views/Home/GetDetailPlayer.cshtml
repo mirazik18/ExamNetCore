@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html>
+<header>
+    <meta charset="utf-8">
+    <link href="~/player.css" rel="stylesheet" type="text/css" />
+</header>
+<body>
+    <img src="@ViewBag.Player.AvatarUrl"></div>
+    <div class="main">
+        <h2><i class="name"></i> QO</h2>
+        <p class="alias">
+            @ViewBag.Player.GameName
+            @ViewBag.Player.RealName
+            
+        </p>
+    </div>
+    <div class="facts">
+        <div class="honors">
+            <div class="booty"
+                <i class="icon"> Позиция</i>
+              <div class="list">
+            <strong>@ViewBag.Player.PositionInGame:</strong>
+          <br>  </br>
+                  </div>
+              </div>
+            <div class="booty">
+                <div class="booty__list">
+                    <br>
+                    <strong>Название команды:</strong>
+                    <ul>
+                        <li> <a href="~/Home/GetDetailTeam/@ViewBag.Team.Id">@ViewBag.Team.Name </a></li>
+                        <li>   <img  src="@ViewBag.Team.LogoUrl"></li>
+                    </ul>
+                    </br>
+                </div>
+            </div>
+            <div class="booty">
+                <i class="icon-booty icon-booty--small icon-booty--third"></i>
+                <div class="booty__list">
+                    <strong>Страна:</strong>
+                    <br><ul>
+                        <li>@ViewBag.Country.ThirdFormat </li>
+                        
+                    </ul></br>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="funds">
+        <strong>Призовые</strong>
+        <p class="money">@ViewBag.Player.EarnedMoney $</p>
+    </div>
+   
+    </div>
+    </div>
+   
+ 
+    </article>
+    </div>
+    </div>
+</body>
+</html>
